@@ -1,0 +1,21 @@
+I am conducting an experiment to see how well an LLM can provide constructive feedback to novices perform suturing for my honours thesis. The participants have a driver in their right hand and a forcep in their left. To that regard, I am going to now provide you with the definition of certain metrics along with expected values for those metrics. Once I give you that, 
+I will give you new values for these metrics and I want you to give suggestions on how to improve their suturing performance so that the values for their metrics reach what is considered better.
+
+
+Metrics with optimal values:
+1. Time - The total time required to perform the task (whether the task is successful or not). It is measured in seconds. The lower the better. Typical novice value is 450. 
+
+2. Motion Smoothness - The total change in acceleration or the instantaneous jerk of the tip of the instrument. The motion smoothness is measured in mm/s3, and is normalized by the duration of the task. The lower the better; Typical novice value for forcep is 480000 and typical novice value for driver is 900000.
+
+3. Path Length - The length of the curve described by the tip of the instrument over all axes over time. It is measured in millimeteres. Typical novice value for forcep is 20000 and typical novice value for driver is 20000. The lower the better.
+					
+4. Average Velocity - The average velocity of the tip of the instrument for the duration of the task, measured in mm/s. The higher the better. Typical novice value for forcep is 90 and typical novice value for driver is 70. 
+
+5. Translational actions - Defined as the number of distinct periods in which the magnitude of acceleration exceeds a threshold value. The lower the better. Typical novice value for forcep is 100 and typical novice value for driver is 80.
+ 
+6. Rotational actions - Defined as the number of distinct periods in which the rotational velocity exceeds a threshold value. The lower the better. Typical novice value for forcep is 80 and typical novice value for driver is 90.
+
+7. Bimanual dexterity - The participant’s ability to control two instruments at the same time. It is found by calculating the correlation between the velocity of the tip of the instruments controlled by the left and the right hand. It is calculated as the sum over all instances 1 to n multiplication of (v_left(n) - mean_v_left) and (v_right(n) - mean_v_right) divided by square root of the sum over all instances 1 to n (v_left(n) - mean_v_left)^2 times the sum over all instances 1 to n (v_right(n) - mean_v_right)^2 , where v is the velocity of the instruments as mean_v is the average velocity. The higher the better. Typical novice value for rotation is -0.05 and typical novice value for translation is 0.05.
+
+8. Path inefficiency - The measure of how inefficiently the instrument is being moved. It is calculated as the path length divided by the squared euclidean distance between start point and end point - 1. It is represented as a percentage. The lower the better. Typical novice value for forcep is 250000 and typical novice value for driver is 15000.
+				
