@@ -1,0 +1,22 @@
+MetricName	MetricRoles	MetricUnit	MetricValue
+Elapsed Time	Any = DriverToReference	s	461.139
+Elapsed Time	Any = ForcepToReference	s	461.139
+Path Length	Any = DriverToReference	mm	5758.13
+Path Length	Any = ForcepToReference	mm	5868.52
+Elapsed Time	Any = DriverTipToDriver	s	461.139
+Path Length	Any = DriverTipToDriver	mm	7477.21
+Elapsed Time	Any = ForcepTipToForcep	s	461.139
+Path Length	Any = ForcepTipToForcep	mm	6261.45
+Average Velocity	Any = DriverTipToDriver	mm/s	30.1456
+Average Velocity	Any = ForcepTipToForcep	mm/s	21.9912
+Bimanual Dexterity: Translational & Rotational	LeftTool = ForcepTipToForcep, RightTool = DriverTipToDriver	rho	"0.04988046402587942	-0.03286389884492813"
+Motion Smoothness	Any = DriverTipToDriver	mm/s^3	357279
+Motion Smoothness	Any = ForcepTipToForcep	mm/s^3	389929
+Path Inefficiency	Any = DriverTipToDriver	%	7201.91
+Path Inefficiency	Any = ForcepTipToForcep	%	10052.1
+Rotational Actions	Any = DriverTipToDriver	count	29
+Rotational Actions	Any = ForcepTipToForcep	count	26
+Rotation Total	Any = DriverTipToDriver	deg	6914.15
+Rotation Total	Any = ForcepTipToForcep	deg	5007.76
+Translational Actions	Any = DriverTipToDriver	count	58
+Translational Actions	Any = ForcepTipToForcep	count	28
